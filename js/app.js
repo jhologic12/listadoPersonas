@@ -35,8 +35,16 @@ function agregarPersonas(){
         console.log(persona);
     } 
     else {
-        console.log("Debe ingresar los datos de nombre y apellido");
+       alert("no se puede dejar los campos nombre y apellido vacío")
     }
 
 
 }
+
+
+
+
+const forma = document.forms['formul'];
+
+forma.addEventListener('focus', (evento)=>{evento.target.style.background = "pink"}, true);
+forma.addEventListener('blur', (evento)=>{evento.target.style.background = ""}, true);
